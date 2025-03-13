@@ -1,0 +1,43 @@
+.search-bar {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 7rem;
+    position: relative;
+}
+  
+.search-bar input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 2px solid #ccc;
+    
+    font-size: 0.9rem;
+    border-radius: 16px;
+    background:  var(--color-main-background);
+}
+
+input::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.error-message {
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    top: 40px;
+}
+
+img.search-icon {
+    /* Fast hack to turn svg imported as image to white color */
+    filter: brightness(0) invert(1);
+}
+
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+    color: white;
+    border-radius: 20px;
+    background-color: var(--color-primary);
+}
